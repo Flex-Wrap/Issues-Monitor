@@ -23,14 +23,18 @@ function App() {
           return;
         }
 
-        // Fetch data from API using the provided key
-        const response = await fetch(`/api/data?key=${encodeURIComponent(key)}`);
+        // Fetch data from Firebase function using the provided key
+        const fetchUrl = `https://dashboard-hdgc4ky2ba-uc.a.run.app?k=${key}`;
+        console.log("Fetching from:", fetchUrl);
+        const response = await fetch(fetchUrl);
+        console.log("Response status:", response.status);
         
         if (!response.ok) {
           throw new Error(`Failed to fetch data: ${response.statusText}`);
         }
 
         const jsonData = await response.json();
+        console.log("Data loaded:", jsonData);
         setData(Array.isArray(jsonData) ? jsonData : jsonData.data || []);
       } catch (err: any) {
         setError(err.message || "Failed to load data");

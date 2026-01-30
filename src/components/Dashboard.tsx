@@ -2,7 +2,7 @@ import { useMemo, useRef } from "react";
 import { ResponsiveBar } from "@nivo/bar";
 import { ResponsivePie } from "@nivo/pie";
 import { ResponsiveRadar } from "@nivo/radar";
-import { CSV_COLUMNS } from "../utils/csvLoader";
+import { CSV_COLUMNS } from "../utils/constants";
 import { theme } from "../theme";
 import "./Dashboard.css";
 
