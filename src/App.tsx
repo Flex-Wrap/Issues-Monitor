@@ -71,7 +71,7 @@ function App() {
         )}
         
         {!loading && !error && data.length > 0 && (
-          <Dashboard data={data} selectedCountry="" selectedRegion="" />
+          <Dashboard data={data} />
         )}
 
         {!loading && !error && data.length === 0 && (

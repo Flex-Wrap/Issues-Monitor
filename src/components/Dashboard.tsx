@@ -8,14 +8,10 @@ import "./Dashboard.css";
 
 interface DashboardProps {
   data: any[];
-  selectedCountry: string;
-  selectedRegion: string;
 }
 
 export function Dashboard({
   data,
-  selectedCountry,
-  selectedRegion,
 }: DashboardProps) {
   const dashboardRef = useRef<HTMLDivElement>(null);
 
