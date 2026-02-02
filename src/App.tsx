@@ -51,7 +51,7 @@ function App() {
       {/* Header Section - Fixed at top */}
       <div className="controls">
         <div className="controls-header">
-          <h1>Issues Monitor Dashboard</h1>
+          <h1>World Energy Issues Monitor</h1>
           <img src={LogoWEC} alt="WEC Logo" className="logo-wec" />
         </div>
       </div>
